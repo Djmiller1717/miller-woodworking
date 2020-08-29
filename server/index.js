@@ -12,6 +12,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')))
 //app.use('/public', express.static(path.join(__dirname, 'server/public')))
 
 //require in your routes and use them on your api path
+//reference juke workshop for router help
 
 //404 handler
 
