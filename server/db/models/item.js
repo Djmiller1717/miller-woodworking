@@ -14,6 +14,7 @@ const Item = db.define('item', {
     description: {
         type: Sequelize.TEXT,
         allowNull: false,
+        defaultValue: 'blah blah blah'
     },
     woodType: {
         type: Sequelize.STRING,
