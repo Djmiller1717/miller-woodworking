@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize") //for things like Sequelize.STRING
-const woodworking = require('../db')
+const db = require('../db')
 
-const Item = woodworking.define('item', {
+const Item = db.define('item', {
     name: {
         type: Sequelize.STRING,
         allowNull: false,
