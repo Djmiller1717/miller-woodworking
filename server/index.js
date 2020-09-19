@@ -2,8 +2,8 @@ const express = require("express")
 const app = express()
 const morgan = require('morgan')
 const path = require('path')
-//require db from /db
-const {db, syncAndSeed} = require('./db')
+const {syncAndSeed} = require('./db')
+
 
 app.use(morgan('dev'))
 app.use(express.json())
@@ -11,8 +11,7 @@ app.use(express.json())
 app.use('/public', express.static(path.join(__dirname, 'public')))
 //app.use('/public', express.static(path.join(__dirname, 'server/public')))
 
-//require in your routes and use them on your api path
-//reference juke workshop for router help
+app.use('/api', require('./api'))
 
 //404 handler
 

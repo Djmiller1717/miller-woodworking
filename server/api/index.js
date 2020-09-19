@@ -3,5 +3,6 @@ const router = require("express").Router()
 
 //routes go here
 //reference juke workshop for routes help
+router.use('/items', require('./item'))
 
 module.exports = router
